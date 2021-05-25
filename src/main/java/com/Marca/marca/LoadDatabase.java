@@ -51,7 +51,7 @@ class LoadDatabase {
             return args -> {
             	Marca marca = new Marca("Vostok");
             	marRepo.save(marca);
-            	Producto producto = new Producto("Komandirskie","reloj", "22-05-2021", 66.70, "Da la hora to juapa");
+            	Producto producto = new Producto("Komandirskie","reloj", "22-05-2021", 66.70, "Da la hora to juapa", marca);
             	producto.setMarca(marca);
             	proRepo.save(producto);
              	marca.addProducto(producto);
