@@ -45,13 +45,14 @@ public class Producto {
     
     public Producto() {}
     
-    public Producto(String nombre, String tipo, String fechaDePublicacion, double precio, String descripcion) {
+    public Producto(String nombre, String tipo, String fechaDePublicacion, double precio, String descripcion, Marca marca) {
         super();
         this.nombre = nombre;
         this.tipo = tipo;
         this.fechaDePublicacion = fechaDePublicacion;
         this.precio = precio;
         this.descripcion = descripcion;
+        this.marca = marca;
     }
 
 	public long getId() {
